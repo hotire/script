@@ -3,7 +3,7 @@
 # ex) target text abc : 123, please##
 
 result="$(
-grep 'target text' fileName* | 
+grep 'target text' target.log* | 
 sed "s/^.*target text, //" |
 sed "s/, please.*$//" |
 sed 's/##//g' |

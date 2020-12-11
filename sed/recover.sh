@@ -4,7 +4,7 @@
 
 result="$(
 grep 'target text' target.log* | 
-sed "s/^.*target text, //" |
+sed "s/^.*target text//" |
 sed "s/, please.*$//" |
 sed 's/##//g' |
 sed 's/abc :/type/g')"
